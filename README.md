@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
+## Setup a similar project
+
+> npm install -g @angular/cli
+
+> ng new jpop-ui
+
+> cd jpop-ui
+
+> ng serve
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
