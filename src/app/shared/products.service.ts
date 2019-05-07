@@ -17,6 +17,23 @@ export class ProductsService {
 
   }
 
+  get(productId) {
+    return this.httpClient.get(this.url + `/${productId}`);
+  }
+
+  update(product: Product) {
+    return this.httpClient.put(this.url + `/${product.id}`, product);
+  }
+
+  create(product: Product) {
+    return this.httpClient.post<Product>(this.url, product);
+  }
+
+  delete(productId) {
+    const deleteUrl = this.url + `/${productId}`;
+    return this.httpClient.delete(deleteUrl);
+  }
+
   getMockProducts(): Product[] {
     return [
       new Product(1, 'Samsung TV', 'Samsung TV', 5, 12345, 'https://via.placeholder.com/150/000000/FFFFFF/?text=Samsung TV'),
