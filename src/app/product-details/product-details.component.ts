@@ -35,12 +35,10 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   private onSubmit() {
-    //this.product.id = Math.floor(Math.random() * (1000)); // My server doesn't generate id
     console.table(this.product);
     this.productsService.update(this.product)
       .subscribe(product => {
         alert('Product Saved Successfully');
-        //this.router.navigate(['']);
       }
       );
   }
