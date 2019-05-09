@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template: `
   <div id="header" >
-    <img src="https://via.placeholder.com/150/ff0000/FFFFFF/?text=J">
+    <img routerLink="/"  src="https://via.placeholder.com/150/ff0000/FFFFFF/?text=J">
     {{title}}
   </div>
   `,

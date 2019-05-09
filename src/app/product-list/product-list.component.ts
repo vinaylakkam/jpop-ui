@@ -26,4 +26,11 @@ export class ProductListComponent implements OnInit {
       }
     )
   }
+
+  onDeleted(productId: number) {
+    this.productService.delete(productId)
+      .subscribe(
+        (data) => this.getProducts()
+      );
+  }
 }
